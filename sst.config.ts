@@ -10,9 +10,9 @@ export default {
 	},
 	stacks(app) {
 		app.stack(function Site({ stack }) {
-			const MY_EXAMPLE_CONFIG = new Config.Secret(stack, 'MY_EXAMPLE_CONFIG');
+			// const MY_EXAMPLE_CONFIG = new Config.Secret(stack, 'MY_EXAMPLE_CONFIG');
 			const site = new SvelteKitSite(stack, 'site', {
-				bind: [MY_EXAMPLE_CONFIG]
+				// bind: [MY_EXAMPLE_CONFIG]
 			});
 			stack.addOutputs({
 				url: site.url
